@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الرئيسية - متجر فاشونيستا</title>
+  <link rel="stylesheet" href="../CSS/Staylee.css">
+  <script  src="../Javascript/JScode.JS"> </script>
+</head>
+<body>
+  <header>
+    <h1 id="header">فاشونيستا - متجر الأزياء العصري</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a> |
+      <a href="products.html">المنتجات</a> |
+      <a href="product-details.html">تفاصيل المنتج</a> |
+      <a href="about.html">من نحن</a> |
+      <a href="contact.html">اتصل بنا</a> |
+      <a href="Signup.html">إنشاء حساب</a> |
+      <a href="login.html">تسجيل الدخول</a>| 
+      <button id="changeColor" type="button" onclick="changeColor()">غير اللون</button>
+
+    </nav>
+  </header>
+  <section class="container">
+    <h2>مرحباً بكم!</h2>
+    <p>اكتشفوا أجمل صيحات الموضة لدينا.</p>
+
+    <img src="../Images/1e6f84cafec0718ef695d3dd092328dd.jpg" alt="صورة ترحيبية" class="home-image">
+
+    <p>شاهد الفيديو الترحيبي:</p>
+
+    <video class="home-video" controls>
+      <source src="../video/VideoEditor_٢٠٢٥٠٧٢٥_٠٩٠١٤٠.mp4" type="video/mp4">
+      المتصفح لا يدعم تشغيل الفيديو.
+    </video>
+  </section>
+
+ 
+  <footer>
+    <p>&copy; 2025 فاشونيستا. جميع الحقوق محفوظة.</p>
+  </footer>
+  <script>
+function changeColor() {
+  let colors = ["red", "blue", "green", "purple", "orange", "pink"];
+  let randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.getElementById("header").style.color = randomColor;
+}
+</script>
+
+</body>
+
+</html>
